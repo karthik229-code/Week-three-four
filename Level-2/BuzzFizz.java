@@ -8,7 +8,9 @@ public class BuzzFizz {
         System.out.print("Enter a number: ");
         int n = input.nextInt();
 
-        for(int i = n; i >= 1; i--) {
+        int i = 1;
+
+        while(i <= n) {
 
             if(i % 3 == 0 && i % 5 == 0)
                 System.out.println("FizzBuzz");
@@ -19,6 +21,7 @@ public class BuzzFizz {
             else
                 System.out.println(i);
 
+            i++;
         }
 
         input.close();
